@@ -23,26 +23,26 @@ library
     exposed-modules:
         Language.Javascript.JSaddle.WebKitGTK
     build-depends:
-        base <5
+        base
     if !impl(ghcjs -any)
       build-depends:
-        aeson >=0.8.0.2 && <2.1,
-        base <5,
-        bytestring >=0.10.6.0 && <0.11,
-        directory >=1.0.0.2 && <1.4,
-        gi-glib >=2.0.14 && <2.1,
-        gi-gio >=2.0.14 && <2.1,
-        gi-gtk >=3.0.17 && <3.1,
-        gi-webkit2 >=4.0.14 && <4.1,
-        gi-javascriptcore >=4.0.14 && <4.1,
-        haskell-gi-base >=0.20 && <0.27,
-        haskell-gi-overloading >=0.0 && < 2.0,
-        jsaddle >=0.9.4.0 && <0.10,
-        text >=1.2.1.3 && <1.3,
-        webkit2gtk3-javascriptcore >=0.14.0.0 && <0.15
+        aeson,
+        base,
+        bytestring,
+        directory,
+        gi-glib,
+        gi-gio,
+        gi-gtk,
+        gi-webkit2,
+        gi-javascriptcore,
+        haskell-gi-base,
+        haskell-gi-overloading,
+        jsaddle,
+        text,
+        webkit2gtk3-javascriptcore
     if !os(windows)
       build-depends:
-        unix >=2.3.1.0 && <2.8
+        unix
     default-language: Haskell2010
     hs-source-dirs: src
     ghc-options: -ferror-spans -Wall

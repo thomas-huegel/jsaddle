@@ -5,6 +5,6 @@ packages:
  jsaddle-webkit2gtk/
  jsaddle-clib/
 
-constraints: haskell-gi-overloading == 0.0
+--constraints: haskell-gi-overloading == 0.0
 
 allow-newer: websockets:random, splitmix:time, *:time, *:unix, *:process, stm:base
